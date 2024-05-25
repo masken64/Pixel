@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "sfpro";
+  src: url('./assets/SFPRODISPLAYREGULAR.OTF');
+}
+
 .body{
-  font-family: "Poppins", sans-serif;
+  font-family: "sfpro", sans-serif;
 }
 .header{
   display: flex;
@@ -16,7 +20,7 @@
   font-size: 40px;
   padding-left: 20px;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: "sfpro", sans-serif;
 }
 .rh{
   display:  flex;
@@ -39,8 +43,11 @@
  align-items: center;
  cursor: pointer;
  transition: 0.3s ease-in-out background-color;
- transition: 0.1s ease-in-out transform;
- font-family: "Poppins", sans-serif;
+ transition: 0.2s ease-in-out transform;
+ font-family: "sfpro", sans-serif;
+ box-shadow: none;
+ box-shadow: none;
+ outline: none;
 }
 .rh button:hover{
   background-color: black;
@@ -50,6 +57,10 @@
   height: 40px;
   margin-right: 30px;
   cursor: pointer;
+  transition: 0.2s ease-in-out transform;
+}
+.cart:hover{
+  transform: scale(1.1);
 }
 .search input{
   padding: 8px;
@@ -57,8 +68,124 @@
   border-radius: 10px;
   border: 1px transparent;
   background-color: rgba(181, 188, 195, 0.419);
-  font-family: "Poppins", sans-serif;
+  font-family: "sfpro", sans-serif;
 }
 .search{
   padding-right: 80px;
+}
+.banner{
+  background-color: rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-family: "sfpro", sans-serif;
+}
+.iphead{
+  background-color: black;
+  font-family: "sfpro", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.ip15{
+  width: 1000px;
+  margin: auto;
+}
+.iptext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.ipt1{
+  font-size: 52px;
+}
+.ipt2{
+  font-size: 20px;
+}
+.ipt3{
+  background-color: black;
+  color: #0077ed;
+  font-family: "sfpro", sans-serif;
+  border: 1px solid #0077ed;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color;
+  transition: color;
+  margin-top: 25px;
+}
+.ipt3:hover{
+  background-color: #0077ed;
+  color: white;
+}
+.shopc{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ padding-top: 20px;
+  padding-bottom: 50px;
+  color: rgb(60, 60, 60);
+}
+.mac,.phone,.audio{
+  width: 300px;
+}
+.macc,.phonec,.audioc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-family: "sfpro", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease-in-out transform;
+ 
+}
+.macc:hover,.phonec:hover,.audioc:hover{
+  transform: scale(1.03);
+}
+.mac,.phone{
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+.mac{
+  padding-bottom: 90px;
+}
+.mact,.phonet,.audiot{
+  font-size: 22px;
+  
+}
+.footerc{
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: "sfpro", sans-serif;
+  justify-content: space-around;
+  padding: 50px;
+  align-items: start;
+}
+.f1{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+
+}
+.fh{
+  font-size: 20px;
+  font-weight: 600;
+}
+.fc{
+  cursor: pointer;
+}
+.audioc{
+  max-width: 495px;
 }
