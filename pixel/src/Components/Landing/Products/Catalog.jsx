@@ -1,9 +1,10 @@
-
+import Banner from "../Banner";
 import cart from './cart.png';
 import icon from './favicon.png'
 import { useState } from 'react';
-import { Link} from 'react-router-dom';
-export default function Header(){
+import Footer from "../Footer";
+import { Link } from "react-router-dom";
+export default function Catalog(){
     const [search, setSearch] = useState('');
     
     function handleChange(e){
@@ -18,7 +19,7 @@ export default function Header(){
      
        <div className='title'>
             <img src={icon} className='logo'></img>
-            <div className='name'><Link to='/' className='name'>PixelStore</Link></div>
+            <div className='name'><Link to='/' className="name">PixelStore</Link></div>
         </div>
        
         <div className='search'>
@@ -26,13 +27,14 @@ export default function Header(){
         </div>
         
         <div className='rh'>
-        <Link to='catalog'><button className='shop'>Shop All</button></Link>
+        <button className='shop'>Shop All</button>
             <button className='code'>View Code</button>
             <img src={cart} className='cart'></img>
             
         </div>
     
     </div>
-    
+    <Banner/>
+    <Footer/>
     </>)
 }

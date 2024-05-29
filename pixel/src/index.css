@@ -189,3 +189,7 @@
 .audioc{
   max-width: 495px;
 }
+.name{
+  text-decoration: none;
+  color: black;
+}
